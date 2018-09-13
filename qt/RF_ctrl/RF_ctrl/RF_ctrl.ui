@@ -1,0 +1,1089 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RF_ctrlClass</class>
+ <widget class="QMainWindow" name="RF_ctrlClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>307</width>
+    <height>834</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RF_ctrl</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="DC">
+       <attribute name="title">
+        <string>下变频控制</string>
+       </attribute>
+       <widget class="QGroupBox" name="DC_input_param">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>输入参数</string>
+        </property>
+        <widget class="QGroupBox" name="DC_input_freq">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>241</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>输入信号中心频率</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>134</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="DC_LO3_freq">
+           <item>
+            <widget class="QLabel" name="label_input_reduction_10">
+             <property name="text">
+              <string>本振LO3频率：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_DC_LO3">
+             <property name="text">
+              <string>24.5</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_input_reduction_13">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>GHz</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>11</x>
+            <y>21</y>
+            <width>231</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QDoubleSpinBox" name="spinBox_DC_LO3">
+             <property name="minimumSize">
+              <size>
+               <width>75</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="decimals">
+              <number>2</number>
+             </property>
+             <property name="minimum">
+              <double>0.550000000000000</double>
+             </property>
+             <property name="maximum">
+              <double>18.000000000000000</double>
+             </property>
+             <property name="value">
+              <double>2.000000000000000</double>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_input_reduction_8">
+             <property name="maximumSize">
+              <size>
+               <width>20</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>GHz</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>(±500M)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_DC_LO3">
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>应用</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="DC_input_bw">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>125</y>
+           <width>241</width>
+           <height>36</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <widget class="QWidget" name="layoutWidget_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>231</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="DC_in_bw_sel">
+           <item>
+            <widget class="QLabel" name="label_input_reduction_9">
+             <property name="text">
+              <string>输入信号带宽选择： </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_DC_BW">
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>70</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="acceptDrops">
+              <bool>false</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string>≤ 1  G</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>≤400 M</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>≤200 M</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>≤20  M</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_8">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>240</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="small_big_sel">
+          <item>
+           <widget class="QRadioButton" name="radioButton_DC_smallsig">
+            <property name="text">
+             <string>小信号输入（&lt;-30dbm）</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_DC_bigsig">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>大信号输入</string>
+            </property>
+            <property name="autoRepeatDelay">
+             <number>300</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="DC_sel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>260</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>下变频选择</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget_13">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>20</y>
+           <width>240</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="DC_sel_ctrl">
+          <item>
+           <widget class="QRadioButton" name="radioButton_enable_dc">
+            <property name="text">
+             <string>下变频使能           </string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_bypass_dc">
+            <property name="text">
+             <string>下变频旁路</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="DC_if_att">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>320</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>中频衰减</string>
+        </property>
+        <widget class="QLabel" name="label_input_reduction_15">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>25</y>
+           <width>15</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>dB</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_input_reduction_16">
+         <property name="geometry">
+          <rect>
+           <x>114</x>
+           <y>25</y>
+           <width>60</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>(0-63.5dB)</string>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="spinBox_DC_hmc624">
+         <property name="geometry">
+          <rect>
+           <x>23</x>
+           <y>24</y>
+           <width>75</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="decimals">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <double>63.500000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.500000000000000</double>
+         </property>
+         <property name="value">
+          <double>32.000000000000000</double>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_DC_hmc624">
+         <property name="geometry">
+          <rect>
+           <x>182</x>
+           <y>21</y>
+           <width>70</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>应用</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="DC_rf_att">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>200</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>射频衰减</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>21</x>
+           <y>21</y>
+           <width>231</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QSpinBox" name="spinBox_DC_hmc939">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>88</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+            <property name="specialValueText">
+             <string>0</string>
+            </property>
+            <property name="value">
+             <number>16</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_input_reduction_6">
+            <property name="maximumSize">
+             <size>
+              <width>15</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>dB</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_DC_hmc939">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>(0-31dB)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_DC_hmc939">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>应用</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <zorder>DC_if_att</zorder>
+       <zorder>DC_input_param</zorder>
+       <zorder>DC_sel</zorder>
+       <zorder>DC_rf_att</zorder>
+      </widget>
+      <widget class="QWidget" name="UC">
+       <attribute name="title">
+        <string>上变频控制</string>
+       </attribute>
+       <widget class="QGroupBox" name="UC_rf_att">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>射频衰减</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>21</x>
+           <y>21</y>
+           <width>231</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QSpinBox" name="spinBox_UC_hmc939">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>88</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+            <property name="specialValueText">
+             <string>0</string>
+            </property>
+            <property name="maximum">
+             <number>62</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_input_reduction_23">
+            <property name="maximumSize">
+             <size>
+              <width>15</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>dB</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_UC_hmc939">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>(0-31dB)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_UC_hmc939">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>应用</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="UC_sel">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>230</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>下变频选择</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>234</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="UC_sel_ctrl">
+          <item>
+           <widget class="QRadioButton" name="radioButton_enable_uc">
+            <property name="text">
+             <string>上变频使能          </string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_bypass_uc">
+            <property name="text">
+             <string>上变频旁路</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="UC_output_param">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>输出参数</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>240</width>
+           <height>18</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="UC_small_big_sel">
+          <item>
+           <widget class="QRadioButton" name="radioButton_UC_smallsig">
+            <property name="text">
+             <string>大信号输出           </string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_UC_bigsig">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="text">
+             <string>小信号输出</string>
+            </property>
+            <property name="autoRepeatDelay">
+             <number>300</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="UC_if_att">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>261</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>中频衰减</string>
+        </property>
+        <widget class="QDoubleSpinBox" name="spinBox_UC_hmc624">
+         <property name="geometry">
+          <rect>
+           <x>22</x>
+           <y>23</y>
+           <width>75</width>
+           <height>22</height>
+          </rect>
+         </property>
+         <property name="decimals">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <double>63.500000000000000</double>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_input_reduction_19">
+         <property name="geometry">
+          <rect>
+           <x>101</x>
+           <y>26</y>
+           <width>15</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>15</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>dB</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_UC_hmc624">
+         <property name="geometry">
+          <rect>
+           <x>114</x>
+           <y>22</y>
+           <width>60</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>60</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>(0-63.5dB)</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_UC_hmc624">
+         <property name="geometry">
+          <rect>
+           <x>181</x>
+           <y>22</y>
+           <width>70</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>应用</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="UC_output_freq">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>241</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>输出信号中心频率</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>50</y>
+           <width>134</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="UC_LO3">
+          <item>
+           <widget class="QLabel" name="label_input_reduction_21">
+            <property name="text">
+             <string>本振LO3频率：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_UC_LO3">
+            <property name="text">
+             <string>24.5</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_input_reduction_22">
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>GHz</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>231</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QDoubleSpinBox" name="spinBox_UC_LO3">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="value">
+             <double>2.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_input_reduction_12">
+            <property name="maximumSize">
+             <size>
+              <width>20</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>GHz</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>(±500M)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_UC_LO3">
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>应用</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <zorder>UC_output_param</zorder>
+       <zorder>UC_if_att</zorder>
+       <zorder>UC_rf_att</zorder>
+       <zorder>UC_sel</zorder>
+       <zorder>UC_output_freq</zorder>
+      </widget>
+      <widget class="QWidget" name="sweep_ctrl">
+       <attribute name="title">
+        <string>扫频控制</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>261</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>扫频设置</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>20</y>
+           <width>181</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>起始频率(GHz):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="SpinBox_StartFreq">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="minimum">
+             <double>0.800000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>18.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>停止频率(GHz):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="SpinBox_EndFreq">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="minimum">
+             <double>0.800000000000000</double>
+            </property>
+            <property name="maximum">
+             <double>18.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>频率步进(GHz):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDoubleSpinBox" name="SpinBox_FreqInc">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <double>18.000000000000000</double>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>频率驻留时间(ms):</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_HoldTime">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>100000000</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>重复次数：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBox_RepeatTimes">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>1000000000</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="layoutWidget_3">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>330</y>
+           <width>181</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QPushButton" name="pushButton_StartSweep">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>启动扫频</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_StopSweep">
+            <property name="minimumSize">
+             <size>
+              <width>70</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>70</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>停止扫频</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="RF_ctrl.qrc"/>
+ </resources>
+ <connections/>
+</ui>

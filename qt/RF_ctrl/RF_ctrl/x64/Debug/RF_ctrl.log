@@ -1,0 +1,20 @@
+﻿  Moc'ing RF_ctrl.h...
+  Rcc'ing RF_ctrl.qrc...
+  Uic'ing RF_ctrl.ui...
+  RCC: Warning: No resources in 'E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\RF_ctrl\RF_ctrl.qrc'.
+  E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\RF_ctrl\RF_ctrl.ui: Warning: The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget1'.
+  E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\RF_ctrl\RF_ctrl.ui: Warning: The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget2'.
+  E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\RF_ctrl\RF_ctrl.ui: Warning: The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget3'.
+  E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\RF_ctrl\RF_ctrl.ui: Warning: The name 'layoutWidget' (QWidget) is already in use, defaulting to 'layoutWidget4'.
+  device.cpp
+  main.cpp
+  reg_operation.cpp
+  RF_ctrl.cpp
+  serial.cpp
+e:\code_pro\qt\rf_control\rf10s\rf_ctrl\rf_ctrl\GBK.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (compiling source file main.cpp)
+e:\code_pro\qt\rf_control\rf10s\rf_ctrl\rf_ctrl\GBK.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (compiling source file RF_ctrl.cpp)
+  moc_RF_ctrl.cpp
+  qrc_RF_ctrl.cpp
+e:\code_pro\qt\rf_control\rf10s\rf_ctrl\rf_ctrl\GBK.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss (compiling source file .\GeneratedFiles\Debug\moc_RF_ctrl.cpp)
+  RF_ctrl.vcxproj -> E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\x64\Debug\RF_ctrl.exe
+  RF_ctrl.vcxproj -> E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\x64\Debug\RF_ctrl.pdb (Full PDB)
