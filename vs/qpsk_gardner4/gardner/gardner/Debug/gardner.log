@@ -1,7 +1,0 @@
-﻿  Gardner.cpp
-e:\zhj\vs\vs2015\qpsk_gardner3\gardner\gardner\gardner.cpp(6): warning C4305: 'initializing': truncation from 'double' to 'float'
-e:\zhj\vs\vs2015\qpsk_gardner3\gardner\gardner\gardner.cpp(7): warning C4305: 'initializing': truncation from 'double' to 'float'
-e:\zhj\vs\vs2015\qpsk_gardner3\gardner\gardner\gardner.cpp(10): warning C4838: conversion from 'double' to 'const float' requires a narrowing conversion
-e:\zhj\vs\vs2015\qpsk_gardner3\gardner\gardner\gardner.cpp(10): warning C4305: 'initializing': truncation from 'double' to 'const float'
-  gardner.vcxproj -> E:\zhj\vs\vs2015\qpsk_gardner3\gardner\Debug\gardner.exe
-  gardner.vcxproj -> E:\zhj\vs\vs2015\qpsk_gardner3\gardner\Debug\gardner.pdb (Full PDB)
