@@ -1,0 +1,3 @@
+RF_ctrl.h|"E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\RF_ctrl\RF_ctrl.h" -o ".\GeneratedFiles\Debug\moc_RF_ctrl.cpp" "-I.\GeneratedFiles" "-I." "-ID:\Qt\Qt5.7.1\5.7\msvc2015_64\include" "-I.\GeneratedFiles\Debug\." "-ID:\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtCore" "-ID:\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtGui" "-ID:\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtANGLE" "-ID:\Qt\Qt5.7.1\5.7\msvc2015_64\include\QtWidgets" -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+RF_ctrl.qrc|"E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\RF_ctrl\RF_ctrl.qrc" -o ".\GeneratedFiles\qrc_RF_ctrl.cpp" --name RF_ctrl
+RF_ctrl.ui|"E:\code_pro\QT\RF_Control\RF10s\RF_ctrl\RF_ctrl\RF_ctrl.ui" -o ".\GeneratedFiles\ui_RF_ctrl.h"
